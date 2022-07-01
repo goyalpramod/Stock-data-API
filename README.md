@@ -44,9 +44,17 @@ One can simply run it, it would store the information in the present directory a
 
 ### Task 1
 * Result.csv has been provided to get a quick look at the output.
+![task1_result](https://github.com/goyalpramod/dayzero-python-problem-my_submission/blob/main/images/task1_result.png)
 
 ### Task 2
 * Results have been provided in the json format to get a quick glance. 
+* Result of get_top_gainers <br />
+![get_top_gainers_result](https://github.com/goyalpramod/dayzero-python-problem-my_submission/blob/main/images/get_top_gainers_result.png)
+* Result of get_top_losers <br />
+![get_top_losers_result](https://github.com/goyalpramod/dayzero-python-problem-my_submission/blob/main/images/get_top_losers_result.png)
+* Result of weekly_report <br />
+![weekly_report_result](https://github.com/goyalpramod/dayzero-python-problem-my_submission/blob/main/images/weekly_report_result.png)
+
 
 ## Problems encountered
 
