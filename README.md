@@ -8,6 +8,7 @@ It can be done by writing the following comand in the terminal <br />
 
 ### Task 1
 <!-- one should have the configurations of postgreSQL with them.  -->
+* Run task1_main.py.
 * One should avail their free API from alpha vantage. Using which one should update the API_key. <br />
 * After updating the information in the code present in task1.py.
 One can simply run it, it would store the information in the present directory as a .db file. <br />
@@ -15,6 +16,7 @@ One can simply run it, it would store the information in the present directory a
 ```engine = create_engine('postgresql://username:password@localhost:5432/name_of_database')```
 
 ### Task 2
+* Run task2_main.py.
 * The location of the data should be present with the user. 
 * After updating the information in db_connect one can start the server by simply running it.
 * Then one can make requests to the api using the tests provided and observe the results.
