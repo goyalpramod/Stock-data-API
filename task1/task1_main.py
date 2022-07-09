@@ -1,5 +1,4 @@
 import pandas as pd
-from pandas_datareader._utils import RemoteDataError
 import time
 import schedule
 from alpha_vantage.timeseries import TimeSeries
@@ -32,7 +31,7 @@ def job():
         try:
             data, meta = ts.get_daily(ticker) #Retrieves the daily data from the API
 
-        except RemoteDataError:
+        except:
             print('No data found for {t}'.format(t=ticker))
 
         print(ticker)
