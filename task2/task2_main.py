@@ -9,7 +9,19 @@ conn = db_connect.connect() #connect to the database
 app = Flask(__name__)
 api = Api(app)
 
-def create_top_gainer_df(df,df2): #the function generates the desired dataframe, by manipulating the two given dataframes 
+def create_top_gainer_df(df,df2):
+    """
+    Returns top_gainer dataframe 
+
+    Paramerers
+    df : dataframe 
+        The stock data of the current day
+    df2 : dataframe 
+        The stock data of the previous day
+
+    Returns
+    dataframe 
+    """
     numbers = [i for i in range(1,21)]
     df["numbers"] = numbers
     df2["numbers"] = numbers
@@ -25,6 +37,18 @@ def create_top_gainer_df(df,df2): #the function generates the desired dataframe,
     return df3
 
 def create_top_losers_df(df,df2):
+    """
+    Returns top_losers dataframe 
+
+    Paramerers
+    df : dataframe 
+        The stock data of the current day
+    df2 : dataframe 
+        The stock data of the previous day
+
+    Returns
+    dataframe 
+    """
     numbers = [i for i in range(1,21)]
     df["numbers"] = numbers
     df2["numbers"] = numbers
