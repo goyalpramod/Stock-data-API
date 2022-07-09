@@ -84,11 +84,12 @@ class WeeklyReport(Resource):
         result = dumps(result, indent=4, separators=(',', ': '))
         return result
         
-
-api.add_resource(TopGainers, '/get_top_gainers') # Route_1
-api.add_resource(TopLosers, '/get_top_losers') # Route_2
-api.add_resource(WeeklyReport, '/generate_weekly_report') # Route_3
-
+try:
+    api.add_resource(TopGainers, '/get_top_gainers') # Route_1
+    api.add_resource(TopLosers, '/get_top_losers') # Route_2
+    api.add_resource(WeeklyReport, '/generate_weekly_report') # Route_3
+except:
+    print("Unable to access the given route, Kinly recheck.")
 
 if __name__ == '__main__':
      app.run(port='5002')
