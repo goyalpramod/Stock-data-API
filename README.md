@@ -1,4 +1,8 @@
-# dayzero-python-problem-my_submission
+# Stock data API
+
+This repository has been devided into two parts.
+Part 1 retrieves the stock data from alpha vantage 
+Part 2 makes inferences from the collected data and sends them to the user via a restful API
 
 ## How to setup
 * import the libraries from requirements.txt <br />
